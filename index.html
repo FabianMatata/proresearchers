@@ -35,18 +35,19 @@
         <p class="text-center">Please fill in the form below<br>
         <div class="row d-flex justify-content-center">
           <div class="col-md-6">
-            <form action="mailto:mfabian601@gmail.com" method="post" enctype="text/plain">
+            <form action="https://formsubmit.co/mfabian601@gmail.com" target="" method="post" enctype="text/plain">
+                <!-- <form target="_blank" action="https://formsubmit.co/matataf@kise.ac.ke" method="POST"> -->
               <!-- 2 column grid layout with text inputs for the first and last names -->
               <div class="row mb-4">
                 <div class="col">
                   <div class="form-outline">
-                    <input type="text" id="form3Example1" class="form-control" />
+                    <input type="text" name="First Name" id="form3Example1" class="form-control" />
                     <label class="form-label" for="form3Example1">First name</label>
                   </div>
                 </div>
                 <div class="col">
                   <div class="form-outline">
-                    <input type="text" id="form3Example2" class="form-control" />
+                    <input type="text" name="Last Name" id="form3Example2" class="form-control" />
                     <label class="form-label" for="form3Example2">Last name</label>
                   </div>
                 </div>
@@ -56,13 +57,13 @@
               <div class="row mb-4">
                 <div class="col">
                   <div class="form-outline">
-                    <input type="email" id="form3Example1" class="form-control" />
+                    <input type="email" name="Email" id="form3Example1" class="form-control" />
                     <label class="form-label" for="form3Example1">Email address</label>
                   </div>
                 </div>
                 <div class="col">
                   <div class="form-outline">
-                    <input type="number" id="form3Example2" class="form-control" placeholder="+254 721 584 219" />
+                    <input type="number" name="Phone number" id="form3Example2" class="form-control" placeholder="+254 721 584 219" />
                     <label class="form-label" for="form3Example2">Phone Number</label>
                   </div>
                 </div>
@@ -72,12 +73,12 @@
               <div class="row mb-4">
                 <div class="col">
                   <div class="form-outline">
-                    <input type="email" id="form3Example1" class="form-control" />
+                    <input type="text" name="Topic" id="form3Example1" class="form-control" />
                     <label class="form-label" for="form3Example1">Topic</label>
                   </div>
                 </div>
                 <div class="col">
-                    <select class="form-select mb-2" aria-label="Default select example">
+                    <select class="form-select mb-2" name="Subject" aria-label="Default select example">
                         <option>Subject</option>
                         <option value="1">Accounting</option>
                         <option value="2">Agriculture</option>
@@ -110,7 +111,7 @@
             <!-- 2 column grid layout with text inputs for the email and phone number -->
               <div class="row mb-4">
                 <div class="col">
-                    <select class="form-select mb-2" aria-label="Default select example">
+                    <select class="form-select mb-2" name=""Paper Type aria-label="Default select example">
                         <option selected>Paper Type</option>
                         <option value="1">Easy</option>
                         <option value="2">Term Paper</option>
@@ -118,7 +119,7 @@
                       </select>
                 </div>
                 <div class="col">
-                    <select class="form-select mb-2" aria-label="Default select example">
+                    <select class="form-select mb-2" name="Academic Level" aria-label="Default select example">
                         <option selected>Academic Level</option>
                         <option value="1">High School</option>
                         <option value="2">Undergraduate</option>
@@ -130,7 +131,7 @@
 
             <div class="row mb-1">
                 <div class="col">
-                    <select class="form-select mb-2" aria-label="Default select example">
+                    <select class="form-select mb-2" name="Referencing Style" aria-label="Default select example">
                         <option selected>Referencing Style</option>
                         <option value="1">APA</option>
                         <option value="2">MLA</option>
@@ -142,7 +143,7 @@
                 </div>
                 <div class="col">
                 <div class="form-outline">
-                    <input type="number" id="" class="form-control" min="0" />
+                    <input type="number" name="Number of References" id="" class="form-control" min="0" />
                     <label class="form-label" for="form6Example2">Number of References</label>
                 </div>
                 </div>
@@ -152,13 +153,13 @@
                 <label class="form-label" for="form6Example1">Deadline Date & Time</label>
                 <div class="col">
                   <div class="form-outline">
-                    <input type="date" id="form3Example1" class="form-control" />
+                    <input type="date" name="Date" id="form3Example1" class="form-control" />
                     <label class="form-label" for="form3Example1"></label>
                   </div>
                 </div>
                 <div class="col">
                   <div class="form-outline">
-                    <input type="time" id="form3Example2" class="form-control" placeholder="time" />
+                    <input type="time" name="Time" id="form3Example2" class="form-control" placeholder="time" />
                     <label class="form-label" for="form3Example2"></label>
                   </div>
                 </div>
@@ -167,20 +168,20 @@
               <div class="row mb-4">
                 <div class="col">
                   <div class="form-outline">
-                    <input type="number" id="form3Example1" class="form-control" min="0" />
+                    <input type="number" name="Number of Pages" id="form3Example1" class="form-control" min="0" />
                     <label class="form-label" for="form3Example1">Number of Pages</label>
                   </div>
                 </div>
                 <div class="col">
                     <div class="form-outline">
-                        <input class="" id="form3Example1" type="file">
+                        <input class="" name="File" id="form3Example1" type="file">
                         <label for="form3Example1" class="form-label">Attach a file</label>
                       </div>
                 </div>
               </div>
               <!--Message input-->
               <div class="form-outline mb-4">
-                <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                <textarea class="form-control" name="Description" id="textAreaExample" rows="4"></textarea>
                 <label class="form-label" for="textAreaExample">Description</label>
               </div>
               <!-- Submit button -->
